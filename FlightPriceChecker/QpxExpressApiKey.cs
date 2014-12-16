@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace JetBluePriceScraper
+namespace FlightPriceChecker
 {
     public static partial class QpxExpress
     {
