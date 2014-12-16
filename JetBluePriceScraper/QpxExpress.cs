@@ -8,7 +8,7 @@ using System.Threading;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
-namespace JetBluePriceScraper
+namespace FlightPriceChecker
 {
     public static partial class QpxExpress
     {
