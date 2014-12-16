@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightPriceChecker", "JetBluePriceScraper\FlightPriceChecker.csproj", "{AB4D74C0-F9C5-4A9A-BA50-9F9343CB0204}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightPriceChecker", "FlightPriceChecker\FlightPriceChecker.csproj", "{AB4D74C0-F9C5-4A9A-BA50-9F9343CB0204}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,7 +15,7 @@ Global
 		{AB4D74C0-F9C5-4A9A-BA50-9F9343CB0204}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = JetBluePriceScraper\FlightPriceChecker.csproj
+		StartupItem = FlightPriceChecker\FlightPriceChecker.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1
 		$1.inheritsSet = VisualStudio
