@@ -2,11 +2,9 @@
 
 namespace JetBluePriceScraper
 {
-    public class QpxExpressApiKey
+    public static partial class QpxExpress
     {
-        public QpxExpressApiKey()
-        {
-        }
+        static string apiKey = "";
     }
 }
 
