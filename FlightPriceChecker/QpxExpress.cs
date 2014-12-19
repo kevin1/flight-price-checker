@@ -37,6 +37,13 @@ namespace FlightPriceChecker
             }
         }
 
+        /// <summary>
+        /// Search for flights based on the specified origins, destinations, airlines, and departure date.
+        /// </summary>
+        /// <param name="origin">IATA city codes for the originating airport.</param>
+        /// <param name="dest">IATA city codes for the destination airport.</param>
+        /// <param name="airlines">IATA airline codes for air carriers to search.</param>
+        /// <param name="departDate">Departure date in the timezone of the origin city.</param>
         public static IEnumerable<Flight> Search(string[] origins, string[] destinations, string[] airlines, DateTime departDate)
         {
             foreach (string origin in origins)
@@ -49,6 +56,13 @@ namespace FlightPriceChecker
             }
         }
 
+        /// <summary>
+        /// Search for flights based on the specified origin, destination, airlines, and departure date.
+        /// </summary>
+        /// <param name="origin">IATA city code for the originating airport.</param>
+        /// <param name="dest">IATA city code for the destination airport.</param>
+        /// <param name="airlines">IATA airline codes for air carriers to search.</param>
+        /// <param name="departDate">Departure date in the timezone of the origin city.</param>
         public static IEnumerable<Flight> Search(string origin, string dest, string[] airlines, DateTime departDate)
         {
             JObject requestJson = CreateBaseRequest();
@@ -135,7 +149,6 @@ namespace FlightPriceChecker
 
         public override string ToString()
         {
-
             return String.Format("{0} ({1}) -> {2} ({3}) for {4:C}", Origin, TimeDepart, Destination, TimeArrive, Price);
         }
     }
