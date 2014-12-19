@@ -74,6 +74,7 @@ namespace FlightPriceChecker
             slice["date"] = departDate.ToString("yyyy-MM-dd");
             slice["permittedCarrier"] = new JArray(airlines);
 
+
             JObject response = JObject.Parse(Client.UploadString(Endpoint, requestJson.ToString()));
             var options = (JArray)response["trips"]["tripOption"];
             foreach (JObject option in options)

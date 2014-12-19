@@ -1,0 +1,21 @@
+﻿{
+    "search":
+    {
+        "origins": [ "SFO", "OAK", "SJC" ],
+        "destinations": [ "NYC" ],
+        "carriers": [ "B6" ],
+        "date": "Jan 8, 2015",
+        "threshold": 141.00
+    },
+    "mailer":
+    {
+        "server": "smtp.example.com",
+        "port": 587,
+        "username": "smtpusername@example.com",
+        "password": "y0urp@ssw0rd",
+        "from": "flights@example.com",
+        "to": "you@example.com",
+        "encryption": true,
+        "acceptAnyCertificate": false
+    }
+}
